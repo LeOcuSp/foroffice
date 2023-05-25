@@ -67,13 +67,13 @@
             $font_path = 'fonts/RobotoSlab-Regular.ttf';
 
             // place text on base template
-            imagettftext($image, 20, 0, 100, 55, $name_text_Color, $font_path, $name_text);
-            imagettftext($image, 20, 0, 100, 115, $position_text_Color, $font_path, $position_text);
-            imagettftext($image, 20, 0, 100, 210, $country_code_text_Color, $font_path, $country_code_text);
-            imagettftext($image, 20, 0, 150, 210, $phone_text_Color, $font_path, $phone_text);
-            imagettftext($image, 20, 0, 100, 270, $email_text_Color, $font_path, $email_text . '@ehssg.org');
-            imagettftext($image, 20, 0, 100, 155, $organization_text_Color, $font_path, $organization_name_text);
-            imagettftext($image, 20, 0, 100, 310, $web_url_text_Color, $font_path, $web_url_text);
+            imagettftext($image, 14, 0, 250, 43, $name_text_Color, $font_path, $name_text);
+            imagettftext($image, 14, 0, 250, 85, $position_text_Color, $font_path, $position_text);
+            imagettftext($image, 14, 0, 250, 125, $country_code_text_Color, $font_path, $country_code_text);
+            imagettftext($image, 14, 0, 290, 125, $phone_text_Color, $font_path, $phone_text);
+            imagettftext($image, 14, 0, 250, 166, $email_text_Color, $font_path, $email_text . '@ehssg.org');
+            imagettftext($image, 14, 0, 70, 190, $organization_text_Color, $font_path, $organization_name_text);
+            imagettftext($image, 14, 0, 250, 190, $web_url_text_Color, $font_path, $web_url_text);
 
             // send image to browser
             ob_start();
